@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- le indica al navegador que use HTML5. -->
+<html lang="es"> <!-- es imortante para el idio y accesibilidad para el seo-->
+    <head>
+        <meta charset="utf-8"/> <!-- para utilizacion de caracter especiales -->
+        <meta name="viewport" content="width=device-width,initial-scale=1"/> <!-- es mas para el manejo pantallas y responsive -->
+        <title>Desarrollo web</title><!-- titulo de la pagina para el buscador web y SEO-->
+        <meta name="description" content="Portafolio- proyecto"/> <!--la descripcion de la pagina para el buscador web y SEO-->
+
+        <!-- open graph (basico)-->
+        <meta property="og:title" content="Desarrollo web">
+        <meta property="og:description"content="Portafolio- proyecto">
+        <link rel="icon" href="/favicon.ico"/>
+        <link rel="stylesheet" href="/Aprendiendo/Mi portafolio/css/style.css">
+    </head>
+    <body>
+    <!-- estructura semantica  header, nav, main, secction, articule, footer para los motores de busqueda y lectores de pantalla-->
+        <header>
+            <div class="container">
+                <h1>Proyecto</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#about">Sobre mi</a></li>
+                        <li><a href="#work">Proyectos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!-- usados en formularios-->
+            <section id="hero" aria-label="Seccion principal">
+                <h2>Desarrollador web  en formacion</h2>
+                <p>Construyo interfaces limpias y accesibles.</p>
+            </section>
+           
+            <section id="about">
+                <h2>Sobre mí</h2>
+                <p>Breve biografía - formación, intereses, objetivos.</p>
+            </section>
+           
+            <section id="work">
+                <h2>Proyectos</h2>
+                <article>
+                    <h3>Proyecto a</h3>
+                    <p>Descripcion corta</p>
+                </article>
+                <!-- Más articulos -->
+            </section>
+
+            <section id="contact">
+                <h2>Contacto</h2>
+                <form action="#" method="post">
+                    <label for="name">Nombre</label>
+                    <input id="name" name="name" type="text" required>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>© mooph - <a href="https://github.com/leoign" rel="noopener">Github</a> </p>
+        </footer>
+    </body>
+</html>
